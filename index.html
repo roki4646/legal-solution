@@ -87,11 +87,11 @@
                   placeholder="Search your services"
                   required=""
                   type="text"
-                  class="flex-grow w-full h-16 px-4 mb-3 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none md:mr-2 md:mb-0 focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
+                  class="text-black flex-grow w-full h-16 px-4 mb-3 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none md:mr-2 md:mb-0 focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
                 />
                 <button
                   type="submit"
-                  class="inline-flex items-center justify-center h-16 px-10 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none bg-bg-primary rounded-lg"
+                  class="inline-flex  items-center justify-center h-16 px-10 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none bg-bg-primary rounded-lg"
                 >
                   Subscribe
                 </button>
@@ -300,9 +300,9 @@
           <br>suffered alteration in some form, by injected humour.
         </p>
 
-        <div class="flex gap-24 my-20">
+        <div class="flex flex-col md:flex-col lg:flex-row gap-4 lg:gap-24 my-20 items-center">
 
-          <div class="flex-1 flex flex-col justify-between">
+          <div class="w-3/4 lg:flex-1 flex flex-col justify-between">
               <div class="collapse collapse-plus bg-base-200 p-7">
                 <input type="radio" name="my-accordion-3" checked="checked" /> 
                 <div class="collapse-title text-2xl font-extrabold text-title-primary">
@@ -341,8 +341,8 @@
               </div>
           </div>
 
-          <div class="flex-1">
-            <img src="./images/faq.png" alt="">
+          <div class="w-3/4 lg:flex-1 items-center">
+            <img class="h-full" src="./images/faq.png" alt="">
           </div>
         </div>
 
@@ -460,9 +460,57 @@
       </section>
 
     </main>
-    <footer>
 
+    <!-- Footer Section -->
+    <footer class="bg-[#111] text-white">
+        <section class="container mx-auto py-10">
+          <footer class=" grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 p-10 bg-[#111] text-base-content text-white ">
+            <div>
+              <img class="mb-8" src="./images/logo.png" alt=""> 
+              <p>There are many variations of  passages <br>of Lorem Ipsum available, but the majority <br> have suffered alteration in some form, <br> by injected humour.</p>
+            </div> 
+            <div class="flex flex-col ">
+              <span class="text-xl font-extrabold text-white font-eb-garamond mb-4">Usefull Link</span> 
+              <a class="link link-hover text-[#CFCFCF] font-eb-garamond mb-2">Home</a> 
+              <a class="link link-hover text-[#CFCFCF] font-eb-garamond mb-2">About</a> 
+              <a class="link link-hover text-[#CFCFCF] font-eb-garamond mb-2">Cases</a> 
+              <a class="link link-hover text-[#CFCFCF] font-eb-garamond mb-2">Blog</a> 
+              <a class="link link-hover text-[#CFCFCF] font-eb-garamond mb-2">Contact</a> 
+  
+            </div> 
+            <div>
+              <span class="text-xl font-extrabold text-white font-eb-garamond mb-4">Contact Now</span> 
+              <p class=" text-[#CFCFCF] font-eb-garamond mb-2">
+                555 4th 5t NW, Washington <br>
+                DC 20530, United States
+              </p> 
+              <p class=" text-[#CFCFCF] font-eb-garamond mb-2">
+                +88 01750 000 000 <br>
+                +88 01750 000 000
+              </p> 
+              <p class=" text-[#CFCFCF] font-eb-garamond mb-2">
+                info@gmail.com  <br>
+                info@gmail.com
+              </p> 
+            </div> 
+            <div>
+              <span class="text-xl font-extrabold text-white font-eb-garamond mb-4">Subscribe</span> 
+              <div class="form-control">
+                <label class="label">
+                  <p class=" text-[#CFCFCF] font-eb-garamond mb-2">
+                    Subscribe for our latest &  <br>
+                    Articles. We Won’t Give You <br>
+                     Spam Mails
+                  </p> 
+                </label> 
+                <div class="relative">
+                  <input type="text" placeholder="Email Address" class="input input-bordered w-3/4 text-black" /> 
+                  <button class="btn absolute top-0 right-12 rounded-l-none bg-bg-primary text-white hover:text-bg-primary"><i class="fa-regular fa-paper-plane"></i></button>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </section>
     </footer>
 </body>
-
 </html>
